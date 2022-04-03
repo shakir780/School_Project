@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import SideMenu from './SidebarNav/SideBarNav'
+import HomePage from './HomePage/HomePage'
+import Landing from './LandingPage.js/Landing'
+import { AnimatePresence } from 'framer-motion';
+import ChatBox from './ChatBox/ChatBox';
+import Desktop from './Desktop/Desktop';
+import './App.css'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <Router>
+    <div>
+    <SideMenu />
+    <AnimatePresence exitBeforeEnter>
+    <ChatBox />
+    <Routes>
+    
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/landing" element={<Landing/>} />
+        <Route path="/Desktop" element={<Desktop/>} />
+      
+    
+    
+    </Routes>
+    </AnimatePresence>
+    
     </div>
-  );
+            </Router>
+
+  )
 }
 
-export default App;
+export default App
