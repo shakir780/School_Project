@@ -4,6 +4,7 @@ import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 import SideMenu from '../SidebarNav/SideBarNav';
 import MovingCloud from '../MovingClouds/MovingCloud';
 import { Link } from "react-router-dom";
+import './Landing.css'
 
 const containerVariants = {
     hidden:{
@@ -107,9 +108,8 @@ Your
                
 
                 </motion.div>
-                <img class="flower" src="./assets/clipart1081.png" alt="" />
-                <img class="paint" src="./assets/clipart1119812.png" alt="" />
-             
+                <img class="tower" src="\assets\clipart2105691 (1).png" alt="" />
+                <img class="backpack" src="\assets\pngfind.com-backpack-png-510605.png" alt="" />
                 
                
                 <div className="col-p-container">
@@ -138,12 +138,15 @@ Your
                 transition={{delay:.1,duration:.8}}
                 
                 className="col-button one">
+
+                  <Link to="/Experience">
                   <button className="btn one ">
                     <span>Tailor my experience</span>
                   </button>
+                  </Link>
                 </motion.div>
              
-             
+           
              </div>
 
 
@@ -196,7 +199,7 @@ transition={{type:'tween',delay:.1,duration:5, repeat:Infinity, repeatType: "rev
                 animate={{y:0}}
                 transition={{delay:.1,duration:.8}}
                 >
-                  <Link to="/Desktop">
+                  <Link to="/college">
                
                   <button className="btn two">
 

@@ -3,6 +3,7 @@ import MovingCloud from '../MovingClouds/MovingCloud'
 import {animate, motion,Override,useMotionValue,AnimatePresence} from "framer-motion"
 import SideMenu from '../SidebarNav/SideBarNav'
 import { Link } from "react-router-dom";
+import './HomePage.css'
 
 const containerVariants={
   hidden:{

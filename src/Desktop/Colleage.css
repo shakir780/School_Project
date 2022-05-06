@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800;900&display=swap");
+* {
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.5s ease;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.computerscince-sections {
+  display: grid;
+  gap: 25px;
+  height: 100vh;
+  grid-template-columns: 3fr 1.12fr;
+  background-color: #eaf9ff;
+}
+/*****************************************************************************************************/
+.left-section {
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+  background-color: #44d3c2;
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+  animation: left-section 0.5s ease;
+}
+
+.left-arrow {
+  position: relative;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 11/12;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+}
+.left-arrow::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  padding: 3px;
+  transform: rotate(315deg);
+}
+
+.left-arrow:hover {
+  transform: translateX(-8px);
+}
+
+.right-arrow {
+  position: relative;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  justify-self: flex-end;
+  align-items: center;
+  grid-column: 20/21;
+  grid-row: 11/12;
+  width: 40px;
+  height: 40px;
+}
+.right-arrow::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+
+  padding: 3px;
+  transform: rotate(135deg);
+}
+.right-arrow:hover {
+  transform: translateX(8px);
+}
+/*****************************************************************************************************/
+.right-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 350px;
+  overflow: auto;
+  background-color: white;
+  animation: right-section 0.5s ease 0.7s;
+  transform: translateX(600px);
+  animation-fill-mode: forwards;
+}
+.right-section::-webkit-scrollbar {
+  display: none;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 35px;
+  padding: 40px 0px 40px 40px;
+}
+.mini-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 35px;
+  padding: 40px 0px 40px 40px;
+  color: whitesmoke;
+  line-height: 35px;
+  font-weight: bolder;
+
+  width: 100%;
+}
+
+.top-video {
+  display: flex;
+
+  width: 100%;
+  height: 40vh;
+}
+.top-video .youtube-link {
+  border: none;
+  width: 100%;
+  height: 35vh;
+}
+.pharmacy-main-title {
+  display: flex;
+}
+.pharmacy-main-title h1 {
+  color: #009ac7;
+  font-weight: bolder;
+  font-size: 45px;
+}
+.pharmacy-main-title p {
+  line-height: 35px;
+  font-weight: bold;
+  color: #00467f;
+}
+.pharmacy-part1 {
+  background-color: #087eb5;
+}
+.pharmacy-part2 {
+  background-color: #087eb5;
+}
+.pharmacy-part3 {
+  background-color: #00467f;
+}
+
+.pharmacy-part3 ol {
+  list-style: none;
+}
+.pharmacy-part4 {
+  background-color: #00467f;
+}
+/*****************************************************************************************************/
+/* defult button with animation */
+.defult-btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 15px 32px 15px 90px;
+  border-radius: 40px;
+  border: none;
+  font-weight: bolder;
+  font-size: small;
+  transition: all 0.5s ease;
+  background-color: white;
+  color: #00467f;
+}
+
+.arrow-icon {
+  transition: visibility 0.5s, opacity 0.2s linear;
+  visibility: hidden;
+  font-size: 25px;
+  padding-left: 20px;
+  opacity: 0;
+  color: #00467f;
+}
+
+.defult-btn:hover .arrow-icon {
+  visibility: visible;
+  opacity: 1;
+}
+.defult-btn:hover {
+  padding: 15px 60px 15px 90px;
+}
+/*  End of defult button with animation */
+
+/*****************************************************************************************************/
+
+/* Animations*/
+
+@keyframes left-section {
+  0% {
+    transform: scaleX(1.4) translateX(190px);
+  }
+  100% {
+    transform: scaleX(1) translateX(00px);
+  }
+}
+@keyframes right-section {
+  0% {
+    transform: translateY(600px);
+  }
+
+  100% {
+    transform: translateY(-0px);
+  }
+}
+
+/*****************************************************************************************************/
+/* End Animations*/
+/*****************************************************************************************************/
+
+/* Responsovness*/
+@media (max-width: 768px) {
+  .computerscince-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .right-section:hover {
+    position: absolute;
+  }
+  .pharmacy-main-title {
+    order: -3;
+    padding-top: 70px;
+  }
+  .right-section {
+    gap: 10px;
+    min-width: 350px;
+  }
+  .left-section {
+    height: 80vh;
+  }
+
+  .top-video {
+    height: 40vh;
+  }
+  .pharmacy-main-title h1 {
+    font-size: 30px;
+  }
+}

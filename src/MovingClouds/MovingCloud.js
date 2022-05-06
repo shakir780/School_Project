@@ -1,5 +1,6 @@
 import React from 'react'
 import {animate, motion,Override,useMotionValue,AnimatePresence} from "framer-motion"
+import './MovingCloud.css'
 const MovingCloud = () => {
   return (
       <>

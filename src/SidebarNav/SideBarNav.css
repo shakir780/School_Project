@@ -1,0 +1,129 @@
+.sidebar{
+    position: fixed;
+    width: 290px;
+  left: 0;
+    height: 100%;
+    background: #053a66;
+    transition: all .5s ease-in-out;
+    z-index: 1111;
+}
+.sidebar-left{
+    left:-290px ;
+}
+.SideBarTitle{
+    color: white;
+   margin: 25px;
+}
+.closeBtn{
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.openBar{
+    position: absolute;
+    cursor: pointer;
+    color: rgb(62, 160, 216);
+    border-radius: 5px;
+    border:1px solid rgb(62, 160, 216);
+ 
+    font-size: 35px;
+    background: white;
+    height: 67.2px;
+    width: 60.4px;
+    text-align: center;
+    line-height: 40px;
+    transition: all .5s ease;
+    
+}
+.fa-bars{
+    /* margin-top: 0px; */
+    font-size: 30px;
+}
+ .sidebar header{
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: end;
+   position: relative;
+  
+    background: #011424;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+.sidebar a{
+    display: block;
+    height: 55px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 1); */
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans' sans-serif;
+   
+    text-decoration: none;
+}
+
+
+
+.sidebar a:hover{
+ background-color: #011424;
+ padding-right: 24px;
+ padding-left:8px;
+ transition: all 0.5s ease-in-out;
+ 
+}
+.sidebar a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.arrow-link{
+    margin-left: 6px;
+    transition: all .15s ease-in ;
+}
+.link:hover{
+    transition: all .15s ease-in-out ;
+}
+
+.arrow-display{
+    display: none;
+}
+.reg-container {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    color:#fff;
+    font-family: 'Roboto' sans-serif;
+    
+}
+.logo-container{
+    width: 50%;
+}
+
+.image-logo img{
+   
+    width: min(50vw, 100px);
+  height: auto;
+  object-fit: cover;
+  background:white;
+  position:fixed;
+  bottom: 0%;
+  margin-left: 30px;
+  margin-top: 10px;
+  background-attachment: fixed;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 30%;
+}
+
+.sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.sidebar a span{
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}

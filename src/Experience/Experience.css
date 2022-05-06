@@ -1,0 +1,95 @@
+.experiecne__section{
+    background-image: linear-gradient(to right bottom, #1d6ee7, #1a64d0, #195bba, #1a51a4, #1a488e);
+   
+  position:fixed;
+    height: 100vh;
+   width: 100%;
+}
+.experiencne__content__container{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 10px;
+    display: flex;
+   position: relative;
+   /* bottom: -100px; */
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    background-image: linear-gradient(to right, #ffffff, #e4e2f2, #c8c6e5, #aaabd8, #8b91cb);
+  border-radius: 50px;
+ 
+ 
+
+}
+.experience__destination__container{
+   display: flex;
+
+   justify-content: center;
+   align-items: center;
+  
+  
+  
+   
+ 
+}
+
+.expeiecne__butttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      align-items: center;
+      width: 100%;
+      
+}
+.expeiecne__butttons button{
+    margin: 0.5rem;
+}
+.expericne__title{
+    background:rgb(0, 183, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border-radius: 15%;
+}
+.expericne__title h3{
+    text-align: center;
+    color: white;
+ display: flex;
+ justify-content: center;
+   align-items: center;
+   margin: 10rem;
+   font-size: 35px;
+}
+@media screen and (max-width:900px) {
+    .experiencne__content__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px ;
+        margin: 20px auto;
+    }
+    .expeiecne__butttons{
+margin-top: 3rem;
+    }
+    .expericne__title h3{
+margin: 6rem;
+    }
+    
+}
+
+@media screen and (max-width:560px) {
+    .experiencne__content__container{
+        grid-template-rows: 200px ;
+        margin:20px auto;
+    }
+    .expericne__title h3{
+font-size: 20px;
+    }
+    @media screen and (max-width:300px) {
+        .expeiecne__butttons button{
+         margin-right: 2rem;
+        }
+        .experiencne__content__container{
+            grid-template-columns: 250px;
+        }
+        .expericne__title h3{
+        margin: 3.8rem;
+        }
+    }
+}

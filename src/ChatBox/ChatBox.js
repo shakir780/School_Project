@@ -1,7 +1,7 @@
  import React,{useState,Fragment} from 'react'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faComment} from '@fortawesome/free-solid-svg-icons'
- 
+ import './ChatBox.css'
  const ChatBox = () => {
 
     const [isActive,setisActive]=useState(false);

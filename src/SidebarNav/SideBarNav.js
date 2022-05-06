@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars,faXmark} from '@fortawesome/free-solid-svg-icons'
+import './SideBarNav.css'
 const SideMenu = () => {
     const [arrow,setArrow]=useState  (false)
     const[showBar,setShowBar]=useState(false)
